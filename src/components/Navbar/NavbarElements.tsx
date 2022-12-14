@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 
@@ -13,7 +13,7 @@ const Nav = styled.nav`
     position: sticky;
 
     top: 0;
-    z-index: 10;
+    z-index: 5;
 
     @media(max-width: 960px) {
         transition: all .8s ease;
@@ -30,7 +30,7 @@ const NavbarContainer = styled.div`
     max-width: 1100px;
 `
 
-const NavLogo: any = styled(LinkR)`
+const NavLogo = styled(LinkRouter)`
     color: #FFF;
     justify-self: flex-start;
     cursor: pointer;
@@ -98,7 +98,7 @@ const NavBtn = styled.nav`
     }
 `
 
-const NavBtnLink = styled(LinkR)`
+const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
     background-color: #01BF71;
     white-space: nowrap;
