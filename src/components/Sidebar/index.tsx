@@ -12,7 +12,7 @@ import {
 
 type Menu = {
     isOpen: boolean
-    toggle: void
+    toggle: () => void
 }
 
 const Sidebar = ({isOpen, toggle}: Menu ) => {

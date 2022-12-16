@@ -12,7 +12,8 @@ import {
 
 import { FaBars } from 'react-icons/fa'
 
-const Navbar = () => {
+
+const Navbar = ({ toggle } : { toggle: () => void }) => {
     return (
         <>
             <Nav>
