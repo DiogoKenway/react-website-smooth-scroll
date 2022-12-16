@@ -3,7 +3,12 @@ import { FaTimes } from "react-icons/fa";
 import { Link as LinkScroll } from "react-scroll";
 import { Link as LinkRouter } from "react-router-dom";
 
-const SidebarContainer = styled.aside`
+interface ISidebarContainerProps {
+    isOpen: boolean
+}
+
+
+const SidebarContainer = styled.aside<ISidebarContainerProps>`
     position: fixed;
     z-index: 6;
     width: 100%;
@@ -11,11 +16,11 @@ const SidebarContainer = styled.aside`
     background: #0d0d0d;
     display: grid;
     align-items: center;
-    top: 0;
     left: 0;
+    top: 0;
     transition: all .3s ease-in-out;
-    opacity: ${isOpen => isOpen ? "100%": "0"};
-    top: ${isOpen => isOpen ? "0" : "-100%"};
+    opacity: ${({isOpen}) => isOpen ? "100%": "0"};
+    top: ${({isOpen}) => isOpen ? "0" : "-100%"};
 `
 
 const Icon = styled.div`

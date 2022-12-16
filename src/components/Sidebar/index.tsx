@@ -17,11 +17,11 @@ type Menu = {
 
 const Sidebar = ({isOpen, toggle}: Menu ) => {
     return (
-        <SidebarContainer>
-            <Icon>
+        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
                 <CloseIcon />
             </Icon>
-            <SidebarWrapper>
+            <SidebarWrapper onClick={toggle}>
                 <SidebarMenu>
                     <SidebarLink to="about">About</SidebarLink>
                     <SidebarLink to="discover">Discover</SidebarLink>
