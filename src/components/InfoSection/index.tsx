@@ -1,3 +1,4 @@
+import Button from "../ButtonElement";
 
 import {
     InfoContainer,
@@ -18,7 +19,7 @@ import {
 const InfoSection = () => {
     
     return (
-        <InfoContainer id={id}>
+        <InfoContainer>
             <InfoWrapper>
                 <InfoRow>
                     <Column1>
@@ -27,7 +28,12 @@ const InfoSection = () => {
                             <Heading>Heading</Heading>
                             <Subtitle>Subtitle</Subtitle>
                             <BtnWrapper>
-                                <Button to="home">Button</Button>
+                                <Button 
+                                    primary={true}
+                                    dark={true}
+                                    fontbig={true}
+                                    big={true}
+                                to="home" >Color</Button>
                             </BtnWrapper>
                         </TextWrapper>
                     </Column1>
