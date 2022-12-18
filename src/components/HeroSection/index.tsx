@@ -32,10 +32,10 @@ const HeroSection = () => {
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to="signup" 
-                    primary={true}
-                    dark={true}
-                    fontbig={true}
-                    big={true}
+                    primary={"active"}
+                    dark={"active"}
+                    fontbig={"active"}
+                    big={"active"}
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     >
