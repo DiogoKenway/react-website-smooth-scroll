@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Video from '../../../public/assets/videos/video.mp4';
+import Video from "../../assets/videos/video.mp4";
 import Button from "../ButtonElement";
 
 import {
