@@ -20,7 +20,7 @@ const HeroSection = () => {
     const onHover = () => setHover(!hover);
 
     return (
-        <HeroContainer>
+        <HeroContainer id="home">
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} />
             </HeroBg>
@@ -38,6 +38,10 @@ const HeroSection = () => {
                     big={"active"}
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    offset={-80}
                     >
                         Get started { hover ? 
                         <ArrowForward/> :
