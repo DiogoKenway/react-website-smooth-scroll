@@ -7,7 +7,14 @@ import {
     FooterLinksWrapper,
     FooterLinkTitle,
     FooterLinkItems,
-    FooterLink
+    FooterLink,
+    SocialMedia,
+    SocialMediaWrap,
+    SocialLogo,
+    WebsiteRights,
+    SocialIcons,
+    SocialIconLink
+
 } from "./FooterElements";
 const Footer = () => {
     return (
@@ -51,24 +58,24 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to="" >dolla</SocialLogo>
-                        <WebSiteRights>dolla &copy; {new Date().getFullYear()}
-                        All rights reserved.</WebSiteRights>
+                        <WebsiteRights>dolla &copy; {new Date().getFullYear()}
+                        All rights reserved.</WebsiteRights>
                         <SocialIcons>
-                            <SocialLink href="/" target="_blank" arial-label="Facebook">
+                            <SocialIconLink href="/" target="_blank" arial-label="Facebook">
                                 <FaFacebook />
-                            </SocialLink>
-                            <SocialLink href="/" target="_blank" arial-label="Instagram">
+                            </SocialIconLink>
+                            <SocialIconLink href="/" target="_blank" arial-label="Instagram">
                                 <FaInstagram/>
-                            </SocialLink>
-                            <SocialLink href="/" target="_blank" arial-label="Youtube">
+                            </SocialIconLink>
+                            <SocialIconLink href="/" target="_blank" arial-label="Youtube">
                                 <FaYoutube />
-                            </SocialLink>
-                            <SocialLink href="/" target="_blank" arial-label="Twitter">
+                            </SocialIconLink>
+                            <SocialIconLink href="/" target="_blank" arial-label="Twitter">
                                 <FaTwitter />
-                            </SocialLink>
-                            <SocialLink href="/" target="_blank" arial-label="LinkdIn">
+                            </SocialIconLink>
+                            <SocialIconLink href="/" target="_blank" arial-label="LinkdIn">
                                 <FaLinkedin />
-                            </SocialLink>
+                            </SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>
                 </SocialMedia>

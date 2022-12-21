@@ -20,8 +20,7 @@ const InfoWrapper = styled.div`
     width: 100%;
     max-width: 1100px;
     /* margin: 0 auto; */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 0 24px;
     justify-content: center;
 `
@@ -37,7 +36,7 @@ const InfoRow = styled.div<InfoRowProps>`
     grid-template-areas: ${({imgStart}) => imgStart ? `'col2 col1'` : `'col1 col2'` };
 
     @media(max-width: 768px) {
-        grid-template-areas: ${({imgStart}) => imgStart ? `'col1 col2'` :
+        grid-template-areas: ${({imgStart}) => imgStart ? `'col1 col1' 'col2 col2'` :
          `'col1 col1' 
          'col2 col2'`
         };

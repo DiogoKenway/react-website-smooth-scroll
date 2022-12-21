@@ -2,9 +2,12 @@ import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
+type NavProps = {
+    scrollNav: boolean;
+}
 
-const Nav = styled.nav`
-    background: #000000;
+const Nav = styled.nav<NavProps>`
+    background: ${({scrollNav}) => scrollNav ? "#000" : "transparent" };
     height: 80px;
     margin-top: -80px;
     display: flex;

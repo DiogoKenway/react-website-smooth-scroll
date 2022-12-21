@@ -65,6 +65,53 @@ const FooterLink = styled(Link)`
     }
 `
 
+const SocialMedia = styled.section`
+    max-width: 1000px;
+    width: 100%;
+`
+
+const SocialMediaWrap = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+
+    @media(max-width: 820px){
+        flex-direction: column;
+    }
+`
+
+const SocialLogo = styled(Link)`
+    color: #FFF;
+    justify-content: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-weight: bold;
+`
+
+const WebsiteRights = styled.small`
+    color: #FFF;
+    margin-bottom: 16px;
+`
+
+const SocialIcons = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+`
+
+const SocialIconLink = styled.a`
+    color: #FFF;
+    font-size: 24px;
+`
+
+
 export {
     FooterContainer,
     FooterWrap,
@@ -72,5 +119,11 @@ export {
     FooterLinksWrapper,
     FooterLinkTitle,
     FooterLinkItems,
-    FooterLink
+    FooterLink,
+    SocialMedia,
+    SocialMediaWrap,
+    SocialLogo,
+    WebsiteRights,
+    SocialIcons,
+    SocialIconLink
 };
