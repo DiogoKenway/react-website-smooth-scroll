@@ -6,7 +6,7 @@ import HeroSection from "../components/HeroSection"
 import InfoSection from '../components/InfoSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from '../components/InfoSection/Data';
 
-const Home = ({ src }: { src: string }) => {
+const Home = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
