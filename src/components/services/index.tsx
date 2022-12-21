@@ -1,9 +1,13 @@
+import Icon1 from "../../assets/images/svg-1.svg";
+import Icon2 from "../../assets/images/svg-3.svg";
+import Icon3 from "../../assets/images/svg-4.svg";
+
 import {
     ServicesContainer,
-    ServicesH1,
     ServicesWrapper,
     ServicesCard,
     ServicesIcon,
+    ServicesH1,
     ServicesH2,
     ServicesP
 } from "./servicesElements";
