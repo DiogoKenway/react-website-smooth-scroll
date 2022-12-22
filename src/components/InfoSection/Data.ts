@@ -7,7 +7,8 @@ import img5 from "../../assets/images/svg-5.svg";
 const homeObjOne = {
     id: "about",
     lightBg: false,
-    lightText: true,    topLine: "Premium Bank",
+    lightText: true,
+    topLine: "Premium Bank",
     headLine: "Unlimited Transactions with zero fees",
     description: "Get acess to our exclussive app that allows you to send unlimited Transactions without getting charget any fees.",
     buttonLabel: "Get started",
@@ -38,7 +39,8 @@ const homeObjTwo = {
 const homeObjThree = {
     id: "signup",
     lightBg: false,
-    lightText: true,    topLine: "Join our Team",
+    lightText: true,    
+    topLine: "Join our Team",
     headLine: "Creating an account is extremely easy",
     description: "Get everything set up and ready in under 10 minutes. All you need do is add your information and you're ready to go",
     buttonLabel: "Start Now",
