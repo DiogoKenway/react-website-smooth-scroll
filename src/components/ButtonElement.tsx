@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 type ButtonProps = {
-    primary: string;
-    big: string;
-    dark: string;
-    fontbig: string; 
+    primary: boolean;
+    dark: boolean;
+    big?: boolean;
+    fontbig?: boolean; 
 }
 
 const Button = styled(Link)<ButtonProps>`

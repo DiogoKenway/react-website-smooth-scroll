@@ -16,6 +16,7 @@ import {
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
+    const [applyStyle, setApplyStyle] = useState(true);
 
     const onHover = () => setHover(!hover);
 
@@ -32,10 +33,10 @@ const HeroSection = () => {
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to="signup" 
-                    primary={"active"}
-                    dark={"active"}
-                    fontbig={"active"}
-                    big={"active"}
+                    primary={applyStyle}
+                    dark={applyStyle}
+                    fontbig={applyStyle}
+                    big={applyStyle}
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     smooth={true}

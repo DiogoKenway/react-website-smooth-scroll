@@ -20,7 +20,6 @@ type homeObjProps = {
     id: string;
     lightBg: boolean;
     lightText: boolean;
-    lightTextDesc: boolean;
     topLine: string;
     headLine: string;
     description: string;
@@ -33,11 +32,10 @@ type homeObjProps = {
     darkText: boolean;
 }
 
-const InfoSection = ({ 
+const InfoSection = ({
     id,
     lightBg,
     lightText,
-    lightTextDesc,
     topLine,
     headLine,
     description,
@@ -67,11 +65,9 @@ const InfoSection = ({
                                         duration={500}
                                         spy={true}
                                         offset={-80}
-                                        primary={"active"}
-                                        dark={"active"}
-                                        fontbig={"active"}
-                                        big={"active"}
-                                        >{buttonLabel}</Button>
+                                        primary={primary}
+                                        dark={dark}
+                                    >{buttonLabel}</Button>
                                 </BtnWrapper>
                             </TextWrapper>
                         </Column1>
